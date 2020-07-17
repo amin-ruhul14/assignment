@@ -30,18 +30,22 @@ console.log("Total Cubic feet wood = " + result);
 
 
 // brickCalculator
+//brickCalculator
 function brickCalculator(numOfFloors) {
     if (numOfFloors <= 0) {
         console.log("Number of floors can't be 0 or less")
         return;
     }
 
-    else if (numOfFloors <= 10) return numOfFloors * 15 * 1000;
-
+    else if (numOfFloors <= 10)
+        return numOfFloors * 15 * 1000;
     else if (numOfFloors <= 20)
-        return 150000 + ((numOfFloors - 10));
+        return 150000 + ((numOfFloors - 10)) * 1000 * 12;
+    else
+        return 270000 + ((numOfFloors - 20) * 1000 * 10);
 }
-
+var result = brickCalculator(12);
+console.log("Total Brick = ", result);
 
 
 //tinyFriend

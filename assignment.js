@@ -15,7 +15,7 @@ console.log("Total Mile = ", result);
 
 // woodCalculator
 
-function woodCaculator(chair, table, bed) {
+function woodCalculator(chair, table, bed) {
     var chairCount = chair * 1;
     var tableCount = table * 3;
     var bedCount = bed * 5;
@@ -23,13 +23,12 @@ function woodCaculator(chair, table, bed) {
     var total = chairCount + tableCount + bedCount;
     return total;
 }
-var result = woodCaculator(5, 3, 2);
+var result = woodCalculator(5, 3, 2);
 console.log("Total Cubic feet wood = " + result);
 
 
 
 
-// brickCalculator
 //brickCalculator
 function brickCalculator(numOfFloors) {
     if (numOfFloors <= 0) {
@@ -44,7 +43,7 @@ function brickCalculator(numOfFloors) {
     else
         return 270000 + ((numOfFloors - 20) * 1000 * 10);
 }
-var result = brickCalculator(12);
+var result = brickCalculator(17);
 console.log("Total Brick = ", result);
 
 
